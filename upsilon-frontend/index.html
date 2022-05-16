@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html style="scroll-snap-type: y proximity;"> <!-- on html and body because browser consistency == null -->
+<head>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@200;300;400&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+<title>upsilon</title>
+</head>
+
+<body style="font-family:'Roboto Mono', monospace; background-color:#222; scroll-snap-type: y proximity;">
+
+<aside id="sidenav" class="uk-light" style="width:8rem;">
+	    <ul class="uk-iconnav uk-iconnav-vertical uk-position-center" uk-scrollspy-nav="closest: li; scroll: true" uk-nav>
+		    <li><a href="#home" uk-icon="icon: home; ratio:1.5;" style="padding-bottom:2rem;"></a></li>
+		    <li><a href="#showcase" uk-icon="icon: image; ratio:1.5;" style="padding-bottom:2rem;"></a></li>
+		    <li><a href="#projects" uk-icon="icon: users; ratio:1.5;" style="padding-bottom:2rem;"></a></li>
+		    <li><a href="#download" uk-icon="icon: download; ratio:1.5;" style="padding-bottom:2rem;"></a></li>
+
+		    <!-- This needs to be removed when inactive, can't just be invisible -->
+		    <!--<li><a href="#submit" uk-icon="icon: sign-in; ratio:1.5;" class="uk-hidden"></a></li>-->
+
+		    <li><a href="#achievements" uk-icon="icon: star; ratio:1.5;" class="" style="padding-bottom:2rem;"></a></li>
+		    <li><a href="#submit" uk-icon="icon: plus; ratio:1.5;" class=""></a></li>
+		</ul>
+</aside>
+
+<div id=home class="uk-section-secondary" style="margin-left:8rem; scroll-snap-align: start; position: relative;" uk-height-viewport>
+
+    <div class="uk-container uk-container-xlarge uk-dark uk-padding-remove-left" style="margin:0;">
+    	<div class="uk-hidden@l uk-padding-large"></div>
+	    <div class="uk-section uk-padding-top">
+	        <h1 class="uk-heading-2xlarge" style="font-family: 'Roboto Mono', monospace; font-weight:200;">upsilon</h1>
+	    </div>
+
+	    <div class="uk-section uk-padding-small">
+	    	<div uk-grid>
+	    		<div class="uk-width-expand">
+			        <p class="uk-text-justify">
+			        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lacus ex. Suspendisse non mauris finibus, finibus velit ac, consectetur erat. Nunc varius sit amet metus et faucibus. Donec eu nulla egestas, iaculis est id, dictum lectus. Aliquam ultricies eros vel imperdiet ultricies. Sed interdum pharetra purus sed aliquet. Aenean ornare et lacus finibus vehicula. Donec vel ultrices eros. Proin varius nisi leo, eget dapibus quam bibendum sed. Donec eget ante ante. Duis euismod lacus mauris, eget auctor tortor rutrum quis. Morbi sit amet lacus aliquam, sodales quam vel, convallis elit. Aliquam id odio consequat libero varius porttitor at ac purus. Duis egestas neque sit amet cursus ultricies. Donec vitae turpis et felis congue rutrum. In posuere, ligula in auctor interdum, lectus leo molestie ipsum, id elementum eros tellus ac justo. Quisque metus dui, condimentum non magna laoreet, accumsan facilisis mauris. Integer lobortis ligula mi, vitae dignissim dolor semper vel.
+			        </p>
+	    		</div>
+	    		<div class="uk-width-1-3 uk-visible@xl"></div>
+	    	</div>
+	    	<button class="uk-button uk-button-large uk-button-default" style="margin-top:2rem; font-family:'Trispace';">Join our Discord server</button>
+		</div>
+
+	</div>
+
+	<div class="uk-flex uk-flex-center" style="color:#a1a1a1;">
+		<div style="position: absolute; bottom: 2rem;">
+    		<span class="uk-visible@l" uk-icon="icon: chevron-down; ratio: 1.5;"></span>
+    	</div>
+	</div>
+
+</div>
+
+<div id=showcase class="uk-section-secondary" style="margin-left:8rem; scroll-snap-align: start; position: relative;" uk-height-viewport>
+
+	<div class="uk-container uk-container-xlarge uk-padding-large uk-padding-remove-left" style="margin:0;">
+        <h1 class="uk-heading-large" style="font-family: 'Roboto Mono', monospace; font-weight:200;">showcase</h1>
+
+        <div class="uk-padding-small uk-flex uk-flex-left">
+
+        	<div class="uk-flex uk-flex-column uk-width-1-4">
+	        	<p class="uk-text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lacus ex. Suspendisse non mauris finibus, finibus velit ac, consectetur erat. Nunc varius sit amet metus et faucibus. Donec eu nulla egestas, iaculis est id, dictum lectus. Aliquam ultricies eros vel imperdiet ultricies. Sed interdum pharetra purus sed aliquet. Aenean ornare et lacus finibus vehicula. Donec vel ultrices eros. Proin varius nisi leo, eget dapibus quam bibendum sed. Donec eget ante ante. Duis euismod lacus mauris, eget auctor tortor rutrum quis.</p>
+
+	        	<p class="uk-text-justify">Morbi sit amet lacus aliquam, sodales quam vel, convallis elit. Aliquam id odio consequat libero varius porttitor at ac purus. Duis egestas neque sit amet cursus ultricies. Donec vitae turpis et felis congue rutrum. In posuere, ligula in auctor interdum, lectus leo molestie ipsum, id elementum eros tellus ac justo. Quisque metus dui, condimentum non magna laoreet, accumsan facilisis mauris. Integer lobortis ligula mi, vitae dignissim dolor semper vel.</p>
+	        </div>
+
+	        <div class="uk-visible-toggle uk-padding uk-padding-remove-top uk-width-expand" style="max-width: 75%;" tabindex="0" uk-slideshow="animation: push; autoplay: true; autoplay-interval: 6000; pause-on-hover: true;">
+
+			    <ul class="uk-slideshow-items">
+			        <li>
+			            <img src="/pumpkinsedit.png" alt="" uk-cover>
+			            <div class="uk-position-small uk-position-bottom-left uk-overlay uk-overlay-primary uk-transition-slide-bottom">
+	        				<h3 class="uk-margin-remove" style="font-family: 'Roboto Mono', monospace; font-weight:500;">Some brad you are</h3>
+	        				<p class="uk-margin-remove"><strong>You have chosen, or been chosen</strong></p>
+	    				</div>
+			        </li>
+			        <li>
+			            <img src="/evessto1.png" alt="" uk-cover>
+			            <div class="uk-position-small uk-position-bottom-left uk-overlay uk-overlay-primary uk-transition-slide-bottom">
+	        				<h3 class="uk-margin-remove" style="font-family: 'Roboto Mono', monospace; font-weight:500;">Some brad you are</h3>
+	        				<p class="uk-margin-remove"><strong>You have chosen, or been chosen</strong></p>
+	    				</div>
+			        </li>
+			        <li>
+			            <img src="/trumpdestroysminecraft.png" alt="" uk-cover>
+			            <div class="uk-position-small uk-position-bottom-left uk-overlay uk-overlay-primary uk-transition-slide-bottom">
+	        				<h3 class="uk-margin-remove" style="font-family: 'Roboto Mono', monospace; font-weight:500;">Some brad you are</h3>
+	        				<p class="uk-margin-remove"><strong>You have chosen, or been chosen</strong></p>
+	    				</div>
+			        </li>
+			        <li>
+			            <img src="/trumpdestroysminecraft.png" alt="" uk-cover>
+			            <div class="uk-position-small uk-position-bottom-left uk-overlay uk-overlay-primary uk-transition-slide-bottom">
+	        				<h3 class="uk-margin-remove" style="font-family: 'Roboto Mono', monospace; font-weight:500;">Some brad you are</h3>
+	        				<p class="uk-margin-remove"><strong>You have chosen, or been chosen</strong></p>
+	    				</div>
+			        </li>
+			        <li>
+			            <img src="/trumpdestroysminecraft.png" alt="" uk-cover>
+			            <div class="uk-position-small uk-position-bottom-left uk-overlay uk-overlay-primary uk-transition-slide-bottom">
+	        				<h3 class="uk-margin-remove" style="font-family: 'Roboto Mono', monospace; font-weight:500;">Some brad you are</h3>
+	        				<p class="uk-margin-remove"><strong>You have chosen, or been chosen</strong></p>
+	    				</div>
+			        </li>
+			    </ul>
+
+			    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+	    	</div>
+	    </div>
+    </div>
+</div>
+
+
+<div id=projects class="uk-section-secondary" style="margin-left:8rem; scroll-snap-align: start; position: relative;" uk-height-viewport>
+
+	<div class="uk-container uk-container-xlarge uk-padding-large uk-padding-remove-left" style="margin:0;">
+        <h1 class="uk-heading-large" style="font-family: 'Roboto Mono', monospace; font-weight:200;">community projects</h1>
+
+        <div class="uk-grid-large uk-padding-small" uk-grid>
+        	<div class="uk-width-1-2">
+        		<div class="uk-visible-toggle uk-align-center uk-width-expand" tabindex="0" uk-slideshow="animation: push; autoplay: true; autoplay-interval: 6000; pause-on-hover: true;">
+	        		<ul class="uk-slideshow-items">
+				        <li>
+				            <img src="/pumpkinsedit.png" alt="" uk-cover>
+				        </li>
+				        <li>
+				            <img src="/evessto1.png" alt="" uk-cover>
+				        </li>
+				        <li>
+				            <img src="/trumpdestroysminecraft.png" alt="" uk-cover>
+				        </li>
+				    </ul>
+
+				    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+				</div>
+				<div class="uk-grid" uk-grid>
+					<div class="uk-width-1-2" style="margin-top:-2rem;">
+						<h3 style="font-family:'Roboto Mono',monospace; font-weight:300;">Ortus City</h3>
+						<p class="uk-text-justify">a project to put a city on minmus and it has like a big railgun or something, idk ask stratz</p>
+		        		<div class="uk-flex" style="height:3.5rem;">
+		        			<button class="uk-width-1-2 uk-button uk-button-large uk-button-default" style="font-family:'Trispace';margin-right:1rem;">Download</button>
+		        			<button class="uk-width-1-2 uk-button uk-button-large uk-button-default" style="font-family:'Trispace';" href="#ortus-modal-1" uk-toggle>Members</button>
+		        		</div>
+		        	</div>
+	        		<ul class="uk-width-1-2" style="list-style: none;">
+			    		<li>Name: big boi 8000, the best big boy in all the vast uncharted Bosmos</li>
+			    		<li>Categorisation: BIG-BO-I80-00</li>
+			    		<li>Size: real big</li>
+			    		<li>Kerbals: lots</li>
+			    		<li>Fuel: so, so much fuel</li>
+			    		<li>Docking ports: like a whole heck ton of them</li>
+			    	</ul>
+	        	</div>
+
+	        	<div id="ortus-modal-1" class="uk-flex-top" uk-modal>
+				    <div class="uk-modal-dialog uk-margin-auto-vertical">
+
+				        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+				        <div class="uk-modal-header">
+				            <h2 class="uk-modal-title" style="font-family:'Roboto Mono', monospace; font-weight:200;">Ortus City contributors</h2>
+				        </div>
+
+				        <div class="uk-modal-body" uk-overflow-auto>
+				            <ul style="list-style: none;">
+				            	<li>stratz</li>
+				            	<li>someone else</li>
+				            	<li>probably another person</li>
+				            	<li>not mark</li>
+				            	<li>he was too busy</li>
+				            	<li>doing all the work</li>
+				            	<li>pho might have helped tho</li>
+				            	<li>I definitely didn't</li>
+				            	<li>ksp is for nerds</li>
+				            </ul>
+				        </div>
+
+				    </div>
+				</div>
+
+        	</div>
+        	<div class="uk-width-1-2">
+        		<div class="uk-visible-toggle uk-align-center uk-width-expand" tabindex="0" uk-slideshow="animation: push; autoplay: true; autoplay-interval: 6000; pause-on-hover: true;">
+	        		<ul class="uk-slideshow-items">
+				        <li>
+				            <img src="/pumpkinsedit.png" alt="" uk-cover>
+				        </li>
+				        <li>
+				            <img src="/evessto1.png" alt="" uk-cover>
+				        </li>
+				        <li>
+				            <img src="/trumpdestroysminecraft.png" alt="" uk-cover>
+				        </li>
+				    </ul>
+
+				    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+				</div>
+        		<div class="uk-grid" uk-grid>
+					<div class="uk-width-1-2" style="margin-top:-2rem;">
+						<h3 style="font-family:'Roboto Mono',monospace; font-weight:300;">Ortus City</h3>
+						<p class="uk-text-justify">a project to put a city on minmus and it has like a big railgun or something, idk ask stratz</p>
+		        		<div class="uk-flex" style="height:3.5rem;">
+		        			<button class="uk-width-1-2 uk-button uk-button-large uk-button-default" style="font-family:'Trispace';margin-right:1rem;">Download</button>
+		        			<button class="uk-width-1-2 uk-button uk-button-large uk-button-default" style="font-family:'Trispace';" href="#ortus-modal-2" uk-toggle>Members</button>
+		        		</div>
+		        	</div>
+	        		<ul class="uk-width-1-2" style="list-style: none;">
+			    		<li>Name: big boi 8000, the best big boy in all the vast uncharted Bosmos</li>
+			    		<li>Categorisation: BIG-BO-I80-00</li>
+			    		<li>Size: real big</li>
+			    		<li>Kerbals: lots</li>
+			    		<li>Fuel: so, so much fuel</li>
+			    		<li>Docking ports: like a whole heck ton of them</li>
+			    	</ul>
+	        	</div>
+
+	        	<div id="ortus-modal-2" class="uk-flex-top" uk-modal>
+				    <div class="uk-modal-dialog uk-margin-auto-vertical">
+
+				        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+				        <div class="uk-modal-header">
+				            <h2 class="uk-modal-title" style="font-family:'Roboto Mono', monospace; font-weight:200;">Ortus City contributors</h2>
+				        </div>
+
+				        <div class="uk-modal-body" uk-overflow-auto>
+				            <ul style="list-style: none;">
+				            	<li>stratz</li>
+				            	<li>someone else</li>
+				            	<li>probably another person</li>
+				            	<li>not mark</li>
+				            	<li>he was too busy</li>
+				            	<li>doing all the work</li>
+				            	<li>pho might have helped tho</li>
+				            	<li>I definitely didn't</li>
+				            	<li>ksp is for nerds</li>
+				            </ul>
+				        </div>
+
+				    </div>
+				</div>
+
+        	</div>
+        </div>
+
+    	<div class="uk-flex uk-flex-center">
+	        <ul class="uk-pagination" style="font-family: 'Trispace', monospace; font-size:1.2rem;" uk-margin>
+			    <li><a href="#"><span uk-pagination-previous></span></a></li>
+			    <li><a href="#">1</a></li>
+			    <li class="uk-disabled"><span>...</span></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li><a href="#">6</a></li>
+			    <li class="uk-active"><span>7</span></li>
+			    <li><a href="#">8</a></li>
+			    <li><a href="#">9</a></li>
+			    <li><a href="#">10</a></li>
+			    <li class="uk-disabled"><span>...</span></li>
+			    <li><a href="#">20</a></li>
+			    <li><a href="#"><span uk-pagination-next></span></a></li>
+			</ul>
+		</div>
+        
+    </div>
+</div>
+
+
+<div id=download class="uk-section-secondary" style="margin-left:8rem; scroll-snap-align: start; position: relative;" uk-height-viewport>
+
+	<div class="uk-container uk-container-xlarge uk-padding-large uk-padding-remove-left" style="margin:0;">
+        <h1 class="uk-heading-large" style="font-family: 'Roboto Mono', monospace; font-weight:200;">download</h1>
+
+        <div class="uk-section uk-padding-small">
+	        <div uk-grid>
+	    		<div class="uk-width-expand">
+			        <p class="uk-text-justify">put this in your ksp folder at <code>C:\please\schedule\an\update\</code> if you're on windows, <code>/wifi-passwords/coffee-shops/starbucks/</code> for os x, or <code>/i/use/arch/btw/</code> if you are running linux.</p>
+			        <p class="uk-text-justify">if you tick the boxes for the planets and the other ones that go round the planets you'll get all the craft that go round those planets or the craft that go round the ones that go round the planets so just tick like a bunch of them and see what happens maybe you'll get some cool stuff maybe not</p>
+	    		</div>
+	    		<div class="uk-width-1-3 uk-visible@xl"></div>
+	    	</div>
+	    	
+    	</div>
+
+        <form>
+        	<button class="uk-button uk-button-large uk-button-default" style="margin-left:1rem; margin-top:2rem; font-family:'Trispace';">Download selected crafts</button>
+        	<div class="uk-position-center uk-padding-large" style="width:80%;margin-left:-4rem;margin-top:8rem;"> <!--remove this when below large-->
+	    	<div class="uk-flex uk-flex-between uk-align-center uk-padding-small" style="font-size:1.5rem;font-weight:300;">
+	            <label style="padding-top:140px;">
+	            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Kerbol</label>
+
+	            <label style="padding-top:140px;">
+	            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Moho</label>
+
+	            <div class="uk-flex uk-flex-column">
+	            	<label style="padding-top:140px;">
+	            		<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Eve</label>
+	            	<div style="height:2rem;"></div>
+	            	<label>
+	            		<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Gilly</label>
+	        	</div>
+
+	            <div class="uk-flex uk-flex-column">
+		            <label style="padding-top:140px;">
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Kerbin</label>
+		            <div style="height:2rem;"></div>
+		            <label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Mun</label>
+		            <label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Minmus</label>
+		        </div>
+
+	            <div class="uk-flex uk-flex-column">
+		            <label style="padding-top:140px;">
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Duna</label>
+		            <div style="height:2rem;"></div>
+		            <label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Ike</label>
+		        </div>
+
+	            <label style="padding-top:140px;">
+	            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Dres</label>
+
+	            <div class="uk-flex uk-flex-column">
+	            	<label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Tylo</label>
+		            <label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Vall</label>
+		            <label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Laythe</label>
+		            <div style="height:2rem;"></div>
+		            <label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Jool</label>
+		            <div style="height:2rem;"></div>
+		            
+		            <label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Bop</label>
+		            <label>
+		            	<input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Pol</label>
+
+	        	</div>
+
+	        	<label style="padding-top:140px;"><input class="uk-checkbox" type="checkbox" style="width:1.5rem;height:1.5rem;margin-right:0.2rem;">Eeloo</label>
+
+	        </div>
+	    	</div>
+    	</form>
+    </div>
+
+</div>
+
+
+<div id=achievements class="uk-section-secondary" style="margin-left:8rem; scroll-snap-align: start; position: relative;" uk-height-viewport>
+
+	<div class="uk-container uk-container-xlarge uk-padding-large uk-padding-remove-left" style="margin:0;">
+        <h1 class="uk-heading-large" style="font-family: 'Roboto Mono', monospace; font-weight:200;">achievements</h1>
+
+        <div uk-grid>
+    		<div class="uk-width-expand">
+		        <p class="uk-padding-small">woo yay you did it yay congrats woo hurray yeah woo yay</p>
+    		</div>
+    		<div class="uk-width-1-3 uk-visible@l"></div>
+    	</div>
+
+    	<div class="uk-grid uk-padding uk-padding-remove-top uk-overflow-auto uk-child-width-1-5@l uk-child-width-1-2@m" uk-grid>
+
+    		<div class="uk-padding-small-left uk-padding-small-right">
+    			<h4 style="font-family:'Roboto Mono', monospace;font-weight:300;margin-bottom:-1rem;"><span uk-icon="icon:bookmark;ratio:1.2;" style="padding-right:0.5rem;"></span>Land on the moon</h4>
+    			<p>we do these things not because they are easy, but because we were bored one weekend</p>
+    		</div>
+
+    		<div class="uk-padding-small-left uk-padding-small-right">
+    			<h4 style="font-family:'Roboto Mono', monospace;font-weight:300;margin-bottom:-1rem;"><span uk-icon="icon:lock;ratio:1.2;" style="padding-right:0.5rem;"></span>become king of mars</h4>
+    			<p>this achievement is hidden until you unlock it</p>
+    		</div>
+    		
+    	</div>
+
+        
+    </div>
+
+</div>
+
+
+<!-- login section -->
+<!--
+<div id=submit class="uk-section-muted uk-preserve-color" style="margin-left:8rem; scroll-snap-align: start;" uk-height-viewport>
+	<div class="uk-container uk-container-xlarge uk-padding-large uk-padding-remove-left" style="margin:0;">
+        <h1 class="uk-heading-large" style="font-family: 'Roboto Mono', monospace; font-weight:200;">log in</h1>
+
+	    <div class="uk-section uk-padding-small" style="margin-top:3rem;">
+		    <div class="uk-grid-large" uk-grid>
+	    		<div class="uk-width-1-2">
+			        <p class="uk-text-justify">
+			        	Welcome to the Upsilon Initiative! Confused? Allow me to explain! I'm sure you've sent a few crafts to Eve never to return and called the planet colonized, but we want to do that on a HUGE scale. We want to see how a community working together can create huge space infrastructure across the entire kerbol system.
+			        </p>
+			        <button class="uk-button uk-button-default uk-button-large" style="margin-top:2rem; font-family: 'Trispace';">Begone, thot</button>
+	    		</div>
+		    </div>
+		</div>
+
+    </div>
+</div>
+-->
+
+<!-- submit/manage section -->
+
+<div id=submit class="uk-section-secondary" style="margin-left:8rem; scroll-snap-align: start;" uk-height-viewport>
+	<div class="uk-container uk-container-xlarge uk-padding-large uk-padding-remove-left" style="margin:0;">
+
+	    <div class="uk-section uk-padding-small">
+		    <div class="uk-grid-large" uk-grid>
+	    		<div class="uk-width-1-2">
+	    			<h1 class="uk-heading-large" style="font-family: 'Roboto Mono', monospace; font-weight:200; margin-left:-0.5rem; margin-bottom:2rem;">upload</h1>
+			        <p class="uk-text-justify">
+			        	Welcome to the Upsilon Initiative! Confused? Allow me to explain! I'm sure you've sent a few crafts to Eve never to return and called the planet colonized, but we want to do that on a HUGE scale. We want to see how a community working together can create huge space infrastructure across the entire kerbol system.
+			        </p>
+
+			        <div class="uk-flex uk-flex-left uk-flex-top" style="padding-top:2rem;">
+			        	<!-- file upload button -->
+
+				        <div class="js-upload" style="width:40%; min-width:40%;" uk-form-custom>
+				        		<input type="file" multiple>
+				        		<button class="uk-button uk-button-default uk-button-large" style="font-family: 'Trispace'; width:100%;" type="button">Pick <span class="uk-visible@xl">or drag</span> a file</button>
+				    	</div>
+				    	
+				    	<!--
+				    	<button class="uk-button uk-button-primary uk-button-large uk-width-expand" style="font-family:'Trispace';min-width:40%;margin-left:2rem;">Submit</button>
+				    	-->
+				    	<p class="uk-text-justify" style="margin-top:auto; margin-bottom:auto; padding-left:4rem;"><span uk-icon="icon:close; ratio:1.2;" style="position: absolute;margin-left:-2rem;"></span>You beansed it dude smh</p>
+				    </div>
+
+			    	<div class="uk-flex uk-flex-left uk-flex-top" style="padding-top:2rem;">
+				    		<form style="width:40%; min-width:40%;">
+			    				<select class="uk-select" required>
+			    					<option value="" disabled selected hidden>Select a craft</option>
+			    				</select>
+					    	</form>
+				    	<ul style="list-style: none; margin-top:0.5rem; margin-left:0rem; padding-left:2rem;">
+				    		<li>Name: big boi 8000, the best big boy in all the vast uncharted Bosmos</li>
+				    		<li>Categorisation: BIG-BO-I80-00</li>
+				    		<li>Size: real big</li>
+				    		<li>Kerbals: lots</li>
+				    		<li>Fuel: so, so much fuel</li>
+				    		<li>Docking ports: like a whole heck ton of them</li>
+				    	</ul>
+			    	</div>
+
+	    		</div>
+	    		<div class="uk-width-1-2">
+	    			<h1 class="uk-heading-large" style="font-family: 'Roboto Mono', monospace; font-weight:200; margin-bottom:2rem;">manage</h1>
+			        <p class="uk-text-justify">
+			        	Welcome to the Upsilon Initiative! Confused? Allow me to explain! I'm sure you've sent a few crafts to Eve never to return and called the planet colonized, but we want to do that on a HUGE scale. We want to see how a community working together can create huge space infrastructure across the entire kerbol system.
+			        </p>
+
+			        <div class="uk-flex uk-flex-between uk-flex-top">
+
+			        	<button class="uk-button uk-button-default uk-button-large" style="margin-top:2rem; padding-left:10%; padding-right:10%; font-family: 'Trispace';">Rename</button>
+			        	<button class="uk-button uk-button-default uk-button-large" style="margin-top:2rem; padding-left:5%; padding-right:5%; font-family: 'Trispace';"><span class="uk-visible@xl">Reupload </span>screenshots</span></button>
+			        	<button class="uk-button uk-button-default uk-button-large" style="margin-top:2rem; padding-left:10%; padding-right:10%; font-family: 'Trispace';">Delete</button>
+			        </div>
+			        <div class="uk-flex uk-flex-left uk-flex-top" style="padding-top:2rem;">
+				    		<form style="width:40%; min-width:40%;">
+			    				<select class="uk-select" required>
+			    					<option value="" disabled selected hidden>Select a craft</option>
+			    				</select>
+					    	</form>
+				    	<ul style="list-style: none; margin-top:0.5rem; margin-left:0rem; padding-left:2rem;">
+				    		<li>Name: big boi 8000, the best big boy in all the vast uncharted Bosmos</li>
+				    		<li>Categorisation: BIG-BO-I80-00</li>
+				    		<li>Votes: 29</li>
+				    		<li>Status: approved</li>
+				    	</ul>
+			    	</div>
+
+	    		</div>
+		    </div>
+		</div>
+
+    </div>
+</div>
+
+</body>
+</html>
